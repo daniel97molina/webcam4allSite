@@ -1,38 +1,230 @@
+body {
+  background-color: #e6ffff;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner {
+  box-shadow: 0px 4px 8px #0000003d;
+  border-radius: 20px;
+  margin-top: 80px;
+  width: 600px;
+  float: left;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background: rgb(255, 113, 68);
+  background: linear-gradient(
+    27deg,
+    rgba(255, 113, 68, 1) 0%,
+    rgba(240, 0, 0, 1) 100%
+  );
+  height: 460px;
+  display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right {
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 50px;
+  width: max-content;
+  float: left;
+}
+.right h4 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  width: 350px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.downloadBanner {
+  width: 200px;
+  height: auto;
+  margin: auto;
+  display: inline-block;
+  float: none;
+}
+.logoBanner{
+  width: 200px;
+  height: auto;
+  display: inline-block;
+  float: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border: 1px solid #585858
+}
+.header-wrapper {
+  height: 100%;
+  width: fit-content;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2,
+h1 {
+  font-weight: 100;
+
+  margin-top: 100px;
+  color: #ff5722;
+  margin-bottom: 40px;
+}
+.half {
+  width: 50%;
+
+  color: #242424;
+}
+.half img {
+  width: 98%;
+  height: auto;
+}
+.downloadSplitCam {
+  display: inline-block;
+  width: 95%;
+  text-decoration: none;
+}
+
+.half h2 {
+  margin: 0px auto;
+  color: #242424;
+  margin-bottom: 10px;
+}
+.half span {
+  margin: 0 auto;
+  font-size: 45px;
+  font-weight: 500;
+}
+.downloadSplitCam h5 {
+  margin: 0 auto;
+}
+.bordered {
+  width: 98%;
+  border: 2px solid #cdf3f2;
+  height: 300px;
+  background-color: white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.bordered:hover {
+  background-color: #ffd3c6;
+  transform: scale(1.02);
+  border: 2px solid #ff5722;
+  box-shadow: 0px 4px 8px #cfcfcf;
+}
+.title {
+  background: rgb(255, 113, 68);
+  background: linear-gradient(
+    27deg,
+    rgba(255, 113, 68, 1) 0%,
+    rgba(240, 0, 0, 1) 100%
+  );
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background: rgb(255, 113, 68);
+  background: linear-gradient(
+    27deg,
+    rgba(255, 113, 68, 1) 0%,
+    rgba(240, 0, 0, 1) 100%
+  );
+  padding: 30px;
+  margin-top: 85px;
+  color: white;
+}
+footer h3 {
+  font-weight: 200;
+  margin: 10px;
+}
+footer a {
+  color: white;
+  margin: 10px;
+}
+.notAligner {
+  margin-bottom: 10px;
+}
+a h5 {
+  color: #ff5722
+}
+.carousel{
+  margin-top: 100px;
+  height: 600px;
+}
+.carousel img{
+  height: 580px;
+  width: auto;
+  object-fit: scale-down;
+}
+
+@media only screen and (max-width: 1050px) {
+  .App-header {
+    height: fit-content;
   }
-  to {
-    transform: rotate(360deg);
+  .right {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    width: 90%;
+  }
+  .right h4 {
+    margin-top: 60px;
+    width: 100%;
+  }
+  .banner {
+    float: none;
+    width: 90%;
+    max-width: 600px;
+  }
+  main {
+    width: 100%;
+  }
+  .title {
+    font-size: 25px;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .half {
+    float: none;
+    width: 100%;
+  }
+  .notAligner {
+    display: block;
+    margin: 0;
+  }
+  .half h2 {
+    font-size: 20px;
+  }
+  .half span {
+    font-size: 30px;
+  }
+  .bordered {
+    box-sizing: border-box;
+    width: 95%;
+    max-width: 600px;
+    height: fit-content;
+    min-height: 200px;
+    padding: 10px;
+    margin: 0 auto;
   }
 }
