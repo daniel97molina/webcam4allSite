@@ -12,6 +12,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <div className="topBar">
+          <a className="first" href="./">Webcam4all</a>
+          <a href="./#FAQs">FAQs</a>
+          <a href="./#webcam">How to use it</a>
+          <a href="./#features">Features</a>
+        </div>
         <header className="App-header">
           <div className="header-wrapper">
             <a href="./">

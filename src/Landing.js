@@ -14,36 +14,36 @@ import "@brainhubeu/react-carousel/lib/style.css";
 const Landing = () => {
   return (
     <main>
-      <Carousel
-        autoPlay={5000}
-        animationSpeed={1000}
-        className="carousel"
-        centered
-        infinite
-        arrows
-        slidesPerPage={3}
-        breakpoints={{
-          1240: {
-            slidesPerPage: 2,
-            arrows: true,
-          },
-          800: {
-            slidesPerPage: 1,
-            arrows: true,
-          },
-        }}
-      >
-        <img src={car5} className="bordered" alt="image5" />
-
-        <img src={car2} className="bordered" alt="image2" />
-        <a href="#skype">
-          <img src={car4} className="bordered" alt="image4" />
-        </a>
-        {/* <img src={car3} className="bordered" alt="image3" /> */}
-        <img src={car1} className="bordered" alt="image1" />
-      </Carousel>
-
-      <h1 className="title" id="skype">
+      <div id="features">
+        <Carousel
+          autoPlay={5000}
+          animationSpeed={1000}
+          className="carousel"
+          centered
+          infinite
+          arrows
+          slidesPerPage={3}
+          breakpoints={{
+            1240: {
+              slidesPerPage: 2,
+              arrows: true,
+            },
+            800: {
+              slidesPerPage: 1,
+              arrows: true,
+            },
+          }}
+        >
+          <img src={car5} className="bordered" alt="image5" />
+          <img src={car2} className="bordered" alt="image2" />
+          <a href="#webcam">
+            <img src={car4} className="bordered" alt="image4" />
+          </a>
+          {/* <img src={car3} className="bordered" alt="image3" /> */}
+          <img src={car1} className="bordered" alt="image1" />
+        </Carousel>
+      </div>
+      <h1 className="title" id="webcam">
         Connect to Zoom, Skype or any other program in 4 simple steps
       </h1>
       <div className="Aligner notAligner">
@@ -72,7 +72,6 @@ const Landing = () => {
           </div>
         </div>
       </div>
-
       <div className="Aligner notAligner">
         <div className="half">
           <div className="bordered Aligner">
@@ -95,9 +94,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
-
       <h1 className="title">
-        Connect through the browser (Chrome, Firefox and Edge)
+        Connect through your browser (Chrome, Firefox and Edge)
       </h1>
       <div className="Aligner notAligner">
         <div className="half">
@@ -111,6 +109,26 @@ const Landing = () => {
           />
         </div>
       </div>
+      <h1 id="FAQs" className="title">Frequently Asked Questions (FAQs)</h1>
+      <h3 className="question">
+        Should the phone be connected to the same network as my computer?
+      </h3>
+      <p className="answer">
+        Yes, both your phone and computer must be connected to the same local
+        network.
+      </p>
+      <h3 className="question">
+        Can my computer be connected through Ethernet?
+      </h3>
+      <p className="answer">
+        Yes, your PC can be connected through Ethernet and your phone through
+        wi-fi, as long as they're in the same network.
+      </p>
+      <h3 className="question">Are you the owner of SplitCam?</h3>
+      <p className="answer">
+        No, We recommend using SplitCam, but we're not related to them in any
+        form
+      </p>
     </main>
   );
 };
