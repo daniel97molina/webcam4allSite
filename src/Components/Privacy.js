@@ -6,14 +6,14 @@ const Privacy = () => {
       <h1 style={{ textAlign: "center" }}>Privacy Policy</h1>
       <p>
         This privacy policy governs your use of the software application
-        "Webcam4all IP Camera" for Android devices, created by 503 Studios
-        ("developer"), available on the Google Play Store and at {" "}
+        "Webcam4all IP Camera" for Android devices, created by 503 Studios,
+        available on the Google Play Store and at{" "}
         <a href="https://webcam4all.surge.sh">webcam4all.surge.sh</a>
         <br />
         <br />
-        Your Consent: By using the Application, you are consenting to the
-        collection and storage of your information as set forth in this Privacy
-        Policy now and as amended by the developer.
+        By using the Application, you are consenting to the collection and
+        storage of your information as set forth in this Privacy Policy now and
+        as amended by the developer.
         <br />
         <br />
         The Application does not collect any personal information. Camera video

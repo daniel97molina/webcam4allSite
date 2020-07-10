@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Landing from "./Components/Landing";
-import Privacy from "./Privacy";
+import Privacy from "./Components/Privacy";
 import Header from "./Components/Header";
 
 import { BrowserRouter, Route } from "react-router-dom";
