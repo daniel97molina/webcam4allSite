@@ -14,8 +14,8 @@ body {
   font-size: 18px;
   float: right;
   margin: 0;
-  padding: 25px;
-  padding-top: 30px;
+  padding: 27px;
+  padding-top: 28px;
   color: white;
   text-decoration: none;
 }
@@ -211,11 +211,26 @@ a h5 {
 }
 .carousel img{
   height: 580px;
-  width: auto;
+  object-fit: scale-down;
+  border-radius: 30px;
+  border: 15px solid rgb(255, 255, 255);
+}
+.obs{
+  height: auto;
+}
+.obs img{
+  height: 300px;
   object-fit: scale-down;
 }
+.obs h2{
+  margin: 0 auto 10px 0
+}
+.BrainhubCarousel__arrows{
+  background-color: rgb(190, 190, 190) !important;
+  border-radius: 50%;
+}
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1070px) {
   .App-header {
     height: fit-content;
   }
@@ -278,5 +293,10 @@ a h5 {
   }
   .topBar .first{
     display: none;
+  }
+  .carousel img{
+    width: 100%;
+    border: none;
+    border-radius: 0px;
   }
 }
