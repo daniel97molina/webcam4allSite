@@ -1,6 +1,7 @@
 import React from "react";
 import car1 from "../images/image1.jpg";
 import car2 from "../images/image2.jpg";
+import car3 from "../images/image3.jpg";
 import car4 from "../images/image4.jpg";
 import car5 from "../images/image5.jpg";
 import img1Url from "../images/1URL.jpg";
@@ -40,9 +41,9 @@ const Landing = () => {
           <img src={car5}  alt="image5" />
           <img src={car2}  alt="image2" />
           <a href="#webcam">
-            <img src={car4}  alt="image4" />
+            <img src={car4}  alt="image4" loading="lazy" />
           </a>
-          {/* <img src={car3} className="bordered" alt="image3" /> */}
+          <img src={car3} className="bordered" alt="image3" loading="lazy"/>
           <img src={car1} alt="image1" />
         </Carousel>
       </div>
@@ -71,7 +72,7 @@ const Landing = () => {
               <h2>
                 <span>2. </span>Add browser in SplitCam
               </h2>
-              <img src={img5} alt="Add browser" />
+              <img src={img5} alt="Add browser"  loading="lazy" />
             </div>
           </div>
         </div>
@@ -83,7 +84,7 @@ const Landing = () => {
               <h2>
                 <span>3. </span>Enter the URL shown in the app and click on Add
               </h2>
-              <img src={img6} alt="Enter url" />
+              <img src={img6} alt="Enter url"  loading="lazy" />
             </div>
           </div>
         </div>
@@ -108,7 +109,7 @@ const Landing = () => {
               <h2>
                 <span>1. </span>Add a 'Browser' as a source
               </h2>
-              <img src={obs1} alt="Add a Browser" />
+              <img src={obs1} alt="Add a Browser"  loading="lazy" />
             </div>
           </div>
         </div>
@@ -119,7 +120,7 @@ const Landing = () => {
               <h2>
                 <span>2. </span>Enter a name
               </h2>
-              <img src={obs2} alt="Enter a name" />
+              <img src={obs2} alt="Enter a name"  loading="lazy" />
             </div>
           </div>
         </div>
@@ -131,7 +132,7 @@ const Landing = () => {
               <span>3. </span>Enter the URL shown in the app and the resolution
               you've selected
             </h2>
-            <img src={obs3} alt="Enter the URL and resolution" />
+            <img src={obs3} alt="Enter the URL and resolution"  loading="lazy"/>
           </div>
         </div>
       </div>
@@ -141,13 +142,14 @@ const Landing = () => {
       </h1>
       <div className="Aligner notAligner">
         <div className="half">
-          <img src={img1Url} alt="Copy This url..." className="bordered" />
+          <img src={img1Url} alt="Copy This url..." className="bordered" loading="lazy"/>
         </div>
         <div className="half">
           <img
             src={img2Browser}
             alt="...Into your browser"
             className="bordered"
+            loading="lazy"
           />
         </div>
       </div>
